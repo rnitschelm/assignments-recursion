@@ -20,18 +20,18 @@ describe("sum", () => {
 
 describe("flatSum", () => {
   xit("sums all the numbers in the array", () => {
-    expect(sum([1, [], [[2]], [3, [4, 5]]])).toBe(15);
+    expect(flatSum([1, [], [[2]], [3, [4, 5]]])).toBe(15);
   });
 
   describe("when the array contains a zero", () => {
     xit("sums all the numbers in the array", () => {
-      expect(sum([1, [], [[0, 2]], [3, [4, 5]]])).toBe(15);
+      expect(flatSum([1, [], [[0, 2]], [3, [4, 5]]])).toBe(15);
     });
   });
 
   describe("when given an empty array", () => {
     xit("returns 0", () => {
-      expect(sum([])).toBe(0);
+      expect(flatSum([])).toBe(0);
     });
   });
 });
